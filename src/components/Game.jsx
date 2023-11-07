@@ -96,7 +96,7 @@ const Game = () => {
       <br/>
       <div>
       {modalOpen && <Modal modalOpen={setModalOpen} question={current} />}
-        <div className="flex space-x-0 gap-1 justify-center">
+        <div className="flex space-x-0 gap-1 justify-center overflow-auto">
           {categories.map((category, index) => (
             <CategoryCard key={index} category={category} />
           ))}
@@ -107,7 +107,7 @@ const Game = () => {
       <br/>
 
       <div>
-        <div className="grid grid-rows-5 grid-flow-col gap-1 justify-center">
+        <div className="grid grid-rows-5 grid-flow-col gap-1 justify-center overflow-auto">
           {questions.map((question, index) => (
             <QuestionCard key={index} question={question} displayQuestion={displayQuestion}/>
           ))}
@@ -120,7 +120,7 @@ const Game = () => {
       <br/>
 
       <div>
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly overflow-auto">
           {players.map((player, index) => (
             <PlayerCard key={index} player={player} />
           ))}

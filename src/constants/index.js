@@ -24,7 +24,7 @@ const categories = [
     title: "Category 3",
   },
   {
-    title: "Category 4",
+    title: "12 Days",
   },
   {
     title: "Category 5",
@@ -108,28 +108,28 @@ const questions = [
     points: 500,
   },
   {
-    question: "Question 16",
-    answer: "Answer 16",
+    question: "Fifth Day",
+    answer: "Golden Rings",
     points: 100,
   },
   {
-    question: "Question 17",
-    answer: "Answer 17",
+    question: "Second Day",
+    answer: "Turtle Doves",
     points: 200,
   },
   {
-    question: "Question 18",
-    answer: "Answer 18",
+    question: "Fourth Day",
+    answer: "Calling Birds",
     points: 300,
   },
   {
-    question: "Question 19",
-    answer: "Answer 19",
+    question: "Twelfth Day",
+    answer: "Drummers Drumming",
     points: 400,
   },
   {
-    question: "Question 20",
-    answer: "Answer 20",
+    question: "Ninth Day",
+    answer: "Ladies Dancing",
     points: 500,
   },
   {
