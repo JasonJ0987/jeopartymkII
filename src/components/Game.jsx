@@ -1,24 +1,12 @@
 import React, { useState } from "react";
 import { players, categories, questions } from '../constants';
-import Modal from "./Modal";
+import QuestionCard from "./Questions";
 
 const CategoryCard = ({ category }) => {
   return (
-    <div className={"container w-64 h-24 border-2 border-white border-opacity-200 rounded-none"}>
-      <h1 className={"text-center p-8"}>
+    <div className={"flex w-64 h-24 border-2 border-white border-opacity-200 rounded-none"}>
+      <h1 className={"m-auto"}>
         {category.title}
-      </h1>
-    </div>
-  )
-}
-
-const QuestionCard = ({ question, displayQuestion }) => {
-
-  return (
-    <div onClick={(event) => displayQuestion(event, question)} className={"cursor-pointer container w-64 h-24 border-2 border-white border-opacity-200 rounded-none"}>
-      <br/>
-      <h1 className={"text-center p-3"}>
-        {question.points}
       </h1>
     </div>
   )
@@ -29,6 +17,37 @@ const PlayerCard = ({ player }) => {
   const [points2, setPoints2] = useState(0);
   const [points3, setPoints3] = useState(0);
 
+  const decrease1 = (event) => {
+    event.preventDefault();
+    let curr_sum = points1 - 100;
+    setPoints1(curr_sum);
+  }
+  const increase1 = (event) => {
+    event.preventDefault();
+    let curr_sum = points1 + 100;
+    setPoints1(curr_sum);
+  }
+  const decrease2 = (event) => {
+    event.preventDefault();
+    let curr_sum = points2 - 100;
+    setPoints2(curr_sum);
+  }
+  const increase2 = (event) => {
+    event.preventDefault();
+    let curr_sum = points2 + 100;
+    setPoints2(curr_sum);
+  }
+  const decrease3 = (event) => {
+    event.preventDefault();
+    let curr_sum = points3 - 100;
+    setPoints3(curr_sum);
+  }
+  const increase3 = (event) => {
+    event.preventDefault();
+    let curr_sum = points3 + 100;
+    setPoints3(curr_sum);
+  }
+
   if (player.id === 0) {
     return (
       <div className={"container w-48 h-20 border-2 border-white border-opacity-200 rounded-none p-4"}>
@@ -38,10 +57,11 @@ const PlayerCard = ({ player }) => {
           </h1>
         </div>
         <div className={"flex justify-center"}>
-
+          <div className="px-1 cursor-pointer" onClick={(event) => decrease1(event)}>{"<"}</div>
           <h2>
-            - {points1} +
+            {points1}
           </h2>
+          <div className="px-1 cursor-pointer" onClick={(event) => increase1(event)}>{">"}</div>
         </div>
       </div>
     )
@@ -54,10 +74,11 @@ const PlayerCard = ({ player }) => {
           </h1>
         </div>
         <div className={"flex justify-center"}>
-
+          <div className="px-1 cursor-pointer" onClick={(event) => decrease2(event)}>{"<"}</div>
           <h2>
-            - {points2} +
+            {points2}
           </h2>
+          <div className="px-1 cursor-pointer" onClick={(event) => increase2(event)}>{">"}</div>
         </div>
       </div>
     )
@@ -70,10 +91,11 @@ const PlayerCard = ({ player }) => {
           </h1>
         </div>
         <div className={"flex justify-center"}>
-
+        <div className="px-1 cursor-pointer" onClick={(event) => decrease3(event)}>{"<"}</div>
           <h2>
-            - {points3} +
+            {points3}
           </h2>
+          <div className="px-1 cursor-pointer" onClick={(event) => increase3(event)}>{">"}</div>
         </div>
       </div>
     )
@@ -81,21 +103,12 @@ const PlayerCard = ({ player }) => {
 }
 
 const Game = () => {
-  const [current, setCurrent] = useState(0);
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const displayQuestion = (event, question) => {
-    event.preventDefault();
-    setModalOpen(true);
-    setCurrent(question);
-  }
 
   return (
     <section className="relative w-full h-screen mx-auto">
       <br/>
       <br/>
       <div>
-      {modalOpen && <Modal modalOpen={setModalOpen} question={current} />}
         <div className="flex space-x-0 gap-1 justify-center overflow-auto">
           {categories.map((category, index) => (
             <CategoryCard key={index} category={category} />
@@ -104,23 +117,17 @@ const Game = () => {
       </div>
 
       <br/>
-      <br/>
 
       <div>
-        <div className="grid grid-rows-5 grid-flow-col gap-1 justify-center overflow-auto">
-          {questions.map((question, index) => (
-            <QuestionCard key={index} question={question} displayQuestion={displayQuestion}/>
-          ))}
+        <div>
+          <QuestionCard />
         </div>
       </div>
 
       <br/>
-      <br/>
-      <br/>
-      <br/>
 
       <div>
-        <div className="flex justify-evenly overflow-auto">
+        <div className="flex justify-evenly overflow-auto py-4">
           {players.map((player, index) => (
             <PlayerCard key={index} player={player} />
           ))}

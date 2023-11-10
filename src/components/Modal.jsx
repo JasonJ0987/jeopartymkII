@@ -44,12 +44,9 @@ function Modal({ modalOpen, question }) {
             <button className="closeButton" onClick={() => modalOpen(false)}> X </button>
           </div>
           <br/>
-          <br/>
           <div className="text-center text-3xl">
             <h1>{question.question}</h1>
           </div>
-          <br/>
-          <br/>
           <br/>
           <br/>
           <br/>
