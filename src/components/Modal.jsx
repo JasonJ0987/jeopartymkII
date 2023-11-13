@@ -33,7 +33,6 @@ function Modal({ modalOpen, question }) {
             <h1>{question.question}</h1>
           </div>
           <br/>
-          <br/>
           <div className="text-center text-6xl">
             <h1 className={showAnswer}>{question.answer}</h1>
           </div>
@@ -43,7 +42,7 @@ function Modal({ modalOpen, question }) {
   } else {
     return (
       <div className="fixed inset-0 bg-hero-pattern bg-cover bg-center bg-opacity-25 backdrop-blur-sm flex justifty-center items-center">
-        <div onClick={isClicked} className="container mx-auto box-border h-1/2 w-1/2 border-2 border-white bg-purple">
+        <div onClick={isClicked} className="container mx-auto box-border h-2/3 w-1/2 border-2 border-white bg-purple">
           <div className="closer">
             <button className="closeButton" onClick={() => modalOpen(false)}> X </button>
           </div>
@@ -51,7 +50,6 @@ function Modal({ modalOpen, question }) {
           <div className="text-center text-3xl">
             <h1>{question.question}</h1>
           </div>
-          <br/>
           <br/>
           <br/>
           <div className="text-center text-6xl">

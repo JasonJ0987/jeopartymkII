@@ -6,6 +6,12 @@ import soundfile2 from '../pings/ping2.mp3'
 import soundfile3 from '../pings/ping3.mp3'
 import "./index.css"
 
+// I have three game states,
+// Waiting for Buzzer
+// Mid Buzzer
+// returns to Waiting Buzzer
+// render two different types of players?
+
 const CategoryCard = ({ category }) => {
   return (
     <div className={"flex w-64 h-24 border-2 border-white border-opacity-200 rounded-none"}>
