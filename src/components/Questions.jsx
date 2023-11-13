@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import { questions } from '../constants';
+import { questions1 } from '../constants';
 
 const QuestionCard = () => {
     const [current, setCurrent] = useState(0);
@@ -337,7 +337,7 @@ const QuestionCard = () => {
     return (
         <div className="grid grid-rows-5 grid-flow-col gap-1 justify-center overflow-auto">
         {modalOpen && <Modal modalOpen={setModalOpen} question={current} />}
-        {questions
+        {questions1
             .filter((question) => question.id === 1)
             .map((quest) => (
               <div
@@ -348,7 +348,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer1}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 2)
             .map((quest) => (
               <div
@@ -359,7 +359,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer2}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 3)
             .map((quest) => (
               <div
@@ -370,7 +370,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer3}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 4)
             .map((quest) => (
               <div
@@ -381,7 +381,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer4}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 5)
             .map((quest) => (
               <div
@@ -392,7 +392,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer5}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 6)
             .map((quest) => (
               <div
@@ -403,7 +403,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer6}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 7)
             .map((quest) => (
               <div
@@ -414,7 +414,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer7}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 8)
             .map((quest) => (
               <div
@@ -425,7 +425,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer8}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 9)
             .map((quest) => (
               <div
@@ -436,7 +436,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer9}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 10)
             .map((quest) => (
               <div
@@ -447,7 +447,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer10}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 11)
             .map((quest) => (
               <div
@@ -458,7 +458,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer11}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 12)
             .map((quest) => (
               <div
@@ -469,7 +469,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer12}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 3)
             .map((quest) => (
               <div
@@ -480,7 +480,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer13}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 14)
             .map((quest) => (
               <div
@@ -491,7 +491,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer14}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 15)
             .map((quest) => (
               <div
@@ -502,7 +502,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer15}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 16)
             .map((quest) => (
               <div
@@ -513,7 +513,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer16}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 17)
             .map((quest) => (
               <div
@@ -524,7 +524,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer17}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 18)
             .map((quest) => (
               <div
@@ -535,7 +535,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer18}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 19)
             .map((quest) => (
               <div
@@ -546,7 +546,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer19}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 20)
             .map((quest) => (
               <div
@@ -557,7 +557,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer20}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 21)
             .map((quest) => (
               <div
@@ -568,7 +568,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer21}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 22)
             .map((quest) => (
               <div
@@ -579,7 +579,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer22}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 23)
             .map((quest) => (
               <div
@@ -590,7 +590,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer23}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 24)
             .map((quest) => (
               <div
@@ -601,7 +601,7 @@ const QuestionCard = () => {
                 <p className={removeAnswer24}>{quest.points}</p>
               </div>
         ))}
-        {questions
+        {questions1
             .filter((question) => question.id === 25)
             .map((quest) => (
               <div

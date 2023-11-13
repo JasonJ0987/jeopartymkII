@@ -15,23 +15,218 @@ const players = [
 
 const categories = [
   {
-    title: "Category 1",
+    title: "Why, Why, Y",
   },
   {
-    title: "Category 2",
+    title: "Before & After",
   },
   {
-    title: "Category 3",
+    title: "Jason Lore",
   },
   {
     title: "12 Days",
   },
   {
-    title: "Category 5",
+    title: "General Knowledge",
+  },
+]
+const geekCategories = [
+  {
+    title: "League of Legends",
+  },
+  {
+    title: "Before & After",
+  },
+  {
+    title: "Secret Technique",
+  },
+  {
+    title: "Letter",
+  },
+  {
+    title: "History",
   },
 ]
 
-const questions = [
+const questions1 = [
+  {
+    question: "Japanese Mafia",
+    answer: "Yakuza",
+    points: 100,
+    double: false,
+    id: 1,
+  },
+  {
+    question: "Christmas Period Observed by Modern-Day Pagans",
+    answer: "Yuletide",
+    points: 200,
+    double: false,
+    id: 2,
+  },
+  {
+    question: "Pint-Sized Race From Video Game Series League of Legends",
+    answer: "Yordle",
+    points: 300,
+    double: false,
+    id: 3,
+  },
+  {
+    question: "Atomic Number 39",
+    answer: "Yttrium",
+    points: 400,
+    double: false,
+    id: 4,
+  },
+  {
+    question: "The Norse Tree of Life",
+    answer: "Yggsdrasil",
+    points: 500,
+    double: false,
+    id: 5,
+  },
+  {
+    question: "Headlined Coachella 2023 by Causing a Fecal Related Occular Infection",
+    answer: "Blackpink Eye",
+    points: 100,
+    double: false,
+    id: 6,
+  },
+  {
+    question: "Stolen by Benjamin Franklin Gates in a 1996 Film Starring Will Smith",
+    answer: "Declaration of Independence Day",
+    points: 200,
+    double: false,
+    id: 7,
+  },
+  {
+    question: "Refrain From Touching Yourself This Month While Wearing the Poppy",
+    answer: "No Nut November 11th",
+    points: 300,
+    double: false,
+    id: 8,
+  },
+  {
+    question: "Dystopian Novel by George Orwell Could Not be Found Due to an Error Code",
+    answer: "198404",
+    points: 400,
+    double: false,
+    id: 9,
+  },
+  {
+    question: "Mattress Supporting Structure Used to Determine How Something is Approached or Perceived",
+    answer: "Bed Frame of Reference",
+    points: 500,
+    double: false,
+    id: 10,
+  },
+  {
+    question: "This is My Korean Full Name",
+    answer: "Chiyoung Jang",
+    points: 100,
+    double: false,
+    id: 11,
+  },
+  {
+    question: "This was My Dorm Number in RVC",
+    answer: "1111",
+    points: 200,
+    double: false,
+    id: 12,
+  },
+  {
+    question: "This is the Town Where I Did High School",
+    answer: "Fort Nelson",
+    points: 300,
+    double: false,
+    id: 13,
+  },
+  {
+    question: "This is the One Liquor I Won't Drink",
+    answer: "Midori",
+    points: 400,
+    double: false,
+    id: 14,
+  },
+  {
+    question: "This Common Type of Cake I will not Consume",
+    answer: "Black Forest Cake",
+    points: 500,
+    double: false,
+    id: 15,
+  },
+  {
+    question: "Fifth Day",
+    answer: "Golden Rings",
+    points: 100,
+    double: false,
+    id: 16,
+  },
+  {
+    question: "Second Day",
+    answer: "Turtle Doves",
+    points: 200,
+    double: false,
+    id: 17,
+  },
+  {
+    question: "Fourth Day",
+    answer: "Calling Birds",
+    points: 300,
+    double: true,
+    id: 18,
+  },
+  {
+    question: "Twelfth Day",
+    answer: "Drummers Drumming",
+    points: 400,
+    double: false,
+    id: 19,
+  },
+  {
+    question: "Ninth Day",
+    answer: "Ladies Dancing",
+    points: 500,
+    double: false,
+    id: 20,
+  },
+  {
+    question: "This Actor Played Wolverine",
+    answer: "Hugh Jackman",
+    points: 100,
+    double: false,
+    id: 21,
+  },
+  {
+    question: "This Email Service is Owned by Microsoft",
+    answer: "Hotmail",
+    points: 200,
+    double: false,
+    id: 22,
+  },
+  {
+    question: "This Planet Has the Most Gravity in Our Solar System",
+    answer: "Jupiter",
+    points: 300,
+    double: false,
+    id: 23,
+  },
+  {
+    question: "South Park's First Episode Aired on this Year",
+    answer: "1997",
+    points: 400,
+    double: false,
+    id: 24,
+  },
+  {
+    question: "This Dutch Makeup Artist Came Out as Transgender in 2020",
+    answer: "De Jager",
+    points: 500,
+    double: false,
+    id: 25,
+  },
+]
+
+const geekQuestions = [
   {
     question: "Question 1",
     answer: "Answer 1",
@@ -138,36 +333,36 @@ const questions = [
     id: 15,
   },
   {
-    question: "Fifth Day",
-    answer: "Golden Rings",
+    question: "Question 16",
+    answer: "Answer 16",
     points: 100,
     double: false,
     id: 16,
   },
   {
-    question: "Second Day",
-    answer: "Turtle Doves",
+    question: "Question 17",
+    answer: "Answer 17",
     points: 200,
     double: false,
     id: 17,
   },
   {
-    question: "Fourth Day",
-    answer: "Calling Birds",
+    question: "Question 18",
+    answer: "Answer 18",
     points: 300,
     double: false,
     id: 18,
   },
   {
-    question: "Twelfth Day",
-    answer: "Drummers Drumming",
+    question: "Question 19",
+    answer: "Answer 19",
     points: 400,
     double: false,
     id: 19,
   },
   {
-    question: "Ninth Day",
-    answer: "Ladies Dancing",
+    question: "Question 20",
+    answer: "Answer 20",
     points: 500,
     double: false,
     id: 20,
@@ -209,4 +404,5 @@ const questions = [
   },
 ]
 
-export { players, categories, questions };
+
+export { players, categories, questions1 };

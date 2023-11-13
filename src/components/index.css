@@ -1,0 +1,12 @@
+.key {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 1rem 4rem 1rem 4rem;
+    transition: all 0.5s;
+}
+
+.playing {
+    transform: scale(1.1);
+    background-color: rgba(247, 255, 136, 0.808);
+}
